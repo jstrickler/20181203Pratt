@@ -31,3 +31,12 @@ with open('../TEMP/pickled_data.pic', 'rb') as pic_in:  # <5>
     pickled_data = pickle.load(pic_in)  # <6>
 
 pprint(pickled_data)  # <7>
+
+x = dict()
+x.update(globals())
+print(x)
+
+# with open('/tmp/all_globals.pic', 'wb') as globals_out:
+#     pickle.dump(globals(), globals_out)
+
+

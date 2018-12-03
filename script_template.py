@@ -3,10 +3,10 @@
 This is the doc string for the module/script.
 """
 import sys
-
-# other imports  (standard library, standard non-library, local)
+# stdlib imports  (standard library, standard non-library, local)
 
 # constants (AKA global variables -- keep these to a minimum)
+MAX_TRIES = 5
 
 # main function
 def main(args):
