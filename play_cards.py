@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+import time
+
+start_time = time.time()
 
 from carddeck import CardDeck
 from jokerdeck import JokerDeck
@@ -61,3 +64,9 @@ print(x)
 d2 += j1
 
 print(d2)
+
+end_time = time.time()
+
+elapsed = end_time - start_time
+
+print(f"That took {elapsed:.4f} seconds")

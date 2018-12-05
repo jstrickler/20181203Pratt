@@ -2,6 +2,7 @@
 #
 import unittest
 from unittest.mock import Mock
+# from pork import ham
 
 RETURN_VALUE = 99
 
@@ -10,7 +11,7 @@ ham = Mock(return_value=RETURN_VALUE)  # <1>
 
 class Spam():  # <2>
     def __init__(self):
-        self._value = ham()  # <3>
+        self._value = ham("whoo", 'Wow')  # <3>
 
     @property
     def value(self):  # <4>
